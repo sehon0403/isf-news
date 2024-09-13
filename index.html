@@ -4,7 +4,7 @@
         <title>ISF NEWS</title>
     </head>
     <body>
-        <h1>Test Hello!!</h1>
+        <h1 id="heading">Test Hello!!</h1>
         <button onclick="pressed()">Test Dynamic</button>
     </body>
     <script>
@@ -14,7 +14,7 @@
         const para = document.createElement("p");
         const node = document.createTextNode("This is new.");
         para.appendChild(node);
-    
+        document.getElementByID("heading").appendChild(node);
     </script>
     <noscript>Your browser does not support JavaScript!</noscript>
 </html>
